@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}"/>
+
+</head>
+<body>
+    <p> {{ content }} </p> 
+    <div class="main">
+        <div class="container">
+            <div class="top">
+                <div class="logo">
+                    <a href="#" class="logo">
+                        <img src="{% static 'main/img/logo.png' %}" alt="Logo"> 
+                    </a>    
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        
+                        <li><a href="main/templates/onas.html">О нас</a></li> 
+                        <li><a href="main/templates/kurs.html">Курсы</a></li> 
+                        <li><a href="main/templates/kont.html">Контакты</a></li> 
+                    </ul>
+                </nav>
+                <div class="buttons">
+                    <a class="top-btn" href="###">Log in / Register</a>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="w1">
+                    <div class="opis">
+                        <h1>
+                            Сайт предлагает широкий выбор IT-курсов, охватывающих различные темы, такие как программирование, веб-разработка и многое другое. Пользователи могут выбрать курсы в зависимости от уровня подготовки — от начинающих до продвинутых. Платформа предоставляет доступ к видеоурокам, практическим заданиям и сертификациям по окончании обучения. Удобный интерфейс и возможность общения с преподавателями и другими студентами делают процесс обучения более эффективным и интерактивным.
+                        </h1>
+                    </div>
+                    <div class="hz">
+                        <img src="{% static 'main/img/2.png' %}" alt="hz"> 
+                    </div>
+                </div>
+                <div class="w2">
+                    <div class="kur">
+                        <h2>
+                            Популярные курсы:
+                        </h2>
+                        <div class="blok-kur">
+                            <div class="blok">
+                                <h3>Python-разработчик</h3>
+                                <h4>Научитесь создавать мощные и эффективные приложения с помощью Python, одного из самых популярных и универсальных языков программирования.</h4>
+                                <a href="/courses/python/" class="buttonsb"> 
+                                    Подробнее
+                                </a>
+                            </div>
+                            <div class="blok">
+                                <h3>JS-разработчик</h3>
+                                <h4>Овладейте JavaScript — ключевым языком для разработки интерактивных веб-приложений и клиентских интерфейсов.</h4>
+                                <a href="/courses/javascript/" class="buttonsb"> 
+                                    Подробнее
+                                </a>
+                            </div>
+                            <div class="blok">
+                                <h3>C++-разработчик</h3>
+                                <h4>Углублённое изучение C++ поможет вам создавать высокопроизводительные и ресурсосберегающие приложения для различных платформ.</h4>
+                                <a href="/courses/cpp/" class="buttonsb"> 
+                                    Подробнее</a>
+                                </div>
+                                <div class="blok">
+                                    <h3>WEB-разработчик</h3>
+                                    <h4>Освойте навыки фронтенд и бэкенд разработки, чтобы создавать современные, быстрые и адаптивные веб-сайты и приложения.</h4>
+                                    <a href="/courses/web/" class="buttonsb"> 
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

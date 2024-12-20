@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/kont.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+    </header>
+    <main>
+        <section class="content">
+            <p>{{ content }}</p>
+        </section>
+        <section class="contact-info">
+            <h2>Наши Контактные Лица</h2>
+            <div class="contact-person">
+                <h3>Иван Иванов</h3>
+                <p>Телефон: +7 (123) 456-78-90</p>
+                <p>Email: ivan.ivanov@example.com</p>
+            </div>
+            <div class="contact-person">
+                <h3>Анна Петрова</h3>
+                <p>Телефон: +7 (123) 555-55-55</p>
+                <p>Email: anna.petrova@example.com</p>
+            </div>
+            <div class="contact-person">
+                <h3>Сергей Смирнов</h3>
+                <p>Телефон: +7 (987) 654-32-10</p>
+                <p>Email: sergey.smirnov@example.com</p>
+            </div>
+        </section>
+        <section class="map">
+            <h2>Наше Местонахождение</h2>
+            <img src="{% static 'main/img/map.png' %}" alt="Карта местонахождения" class="map-image">
+        </section>
+    </main>
+</body>
+</html>
